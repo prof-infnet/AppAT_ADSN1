@@ -14,6 +14,8 @@ namespace AppAT.DAL.Data
 
         public DbSet<Book> Books { get; set; }
 
+        public DbSet<AuthorBook> AuthorBooks { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AuthorBook>()
